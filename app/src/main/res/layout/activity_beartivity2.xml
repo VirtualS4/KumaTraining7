@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Beartivity2">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_gofood"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Order Food"
+        android:textColor="#00FF00"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Nama"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:paddingRight="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Alamat"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:backgroundTint="#00FF00"
+                android:paddingRight="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Pesan"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:paddingRight="15dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/txt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Isi Nama"
+                android:textSize="18sp"
+                android:inputType="textPersonName"
+                android:backgroundTint="#00FF00"
+                />
+            <EditText
+                android:id="@+id/txt_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Isi Alamat"
+                android:inputType="text"
+                android:backgroundTint="#00FF00"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/txt_pesan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Isi Pesanan"
+                android:backgroundTint="#00FF00"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FF00"
+        android:layout_margin="10dp"
+        android:text="ORDER"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>
